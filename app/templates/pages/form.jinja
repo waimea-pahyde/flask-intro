@@ -1,0 +1,54 @@
+{% extends 'pages/base.jinja' %}
+
+{% block title%}
+Flask About
+{%endblock%}
+
+{% block content%}
+
+<article>
+<h1> fomr </h1>
+
+<form method="POST" action="/processForm">
+
+        <fieldset>
+        
+        <label>
+                <label>
+                Your Name?
+                <input 
+                name = "name"
+                type = "text"
+                placeholder = "Ponyboy Curtis"
+                required>
+                </label>
+        
+        </label>
+        
+        </fieldset>
+
+                <fieldset>
+        
+        <label>
+                <label>
+                Your Age?
+                <input
+                name="age"
+                type="number"
+                placeholder="14"
+                min="0"
+                max="100"
+                required
+                                >
+                </label>
+        
+        </label>
+        
+        </fieldset>
+
+        <input type="submit" value="The Government Thanks You!!">
+
+</form>
+
+</article>
+{%endblock%}
