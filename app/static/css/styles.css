@@ -3,3 +3,8 @@ article#random {
     text-align: center;
     color: var(--pico-primary);
 }
+
+article#form {
+    max-width: 150rem;
+    justify-self: center;
+}
